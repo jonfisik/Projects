@@ -3,10 +3,10 @@ Operadores realcionais
 == > >= =< < !=
 '''
 print('-'*30)
-print('COMPARANDO NÚMEROS'.center(30))
+print('COMPARANDO NÚMEROS Versão 1.0'.center(30))
 print('-'*30)
-opcao = int(input('''[1] Para números reais
-[2] Para números inteiros
+opcao = int(input('''[1] Para números INTEIRO
+[2] Para números REAIS
 Opção: '''))
 print('-'*30)
 if opcao == 1:
