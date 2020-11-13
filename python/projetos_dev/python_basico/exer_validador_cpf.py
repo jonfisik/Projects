@@ -37,7 +37,7 @@ print('-'*20)
 lista2_cpf = [1,6,8,9,9,5,3,5,0,0]
 
 soma = 0
-for i, j in enumerate(lista1_cpf):
+for i, j in enumerate(lista2_cpf):
     print(f'{i+1}) {j} x {11-i} = {j * (11-i)}')
     soma = soma + (j * (11-i))
 print('-'*20)
