@@ -48,3 +48,37 @@ for k in dicio3.items():
 
 for k, v in dicio3.items():
     print(k,v)
+
+print('-'*20)
+# dicionário dentro de dicionários
+cliente = {
+    'cliente1': {
+        'nome': 'luiz',
+        'sobrenome': 'otavio',
+    },
+    'cliente2': {
+        'nome': 'João',
+        'sobrenome': 'moreira',
+    },
+    'cliente3': {
+        'nome': 'ze',
+        'sobrenome': 'silva',
+    },
+}
+# iteração para dicionários dentro de dicionários
+for clientes_k, clientes_v in cliente.items():
+    print(f'Exibindo {clientes_k}')
+    for dados_k, dados_v in clientes_v.items():
+        print(f'\t{dados_k} = {dados_v}')
+
+print('-'*20)
+copia_rasa = cliente.copy()
+print(copia_rasa)
+import copy
+# cria dicionaŕios independentes
+copia_profunda = copy.deepcopy(cliente)
+print(copia_profunda)
+copia_profunda['cliente1']= 'teste'
+print(copia_profunda)
+copia_profunda['cliente2'][2]= 'teste'
+print(copia_profunda)
