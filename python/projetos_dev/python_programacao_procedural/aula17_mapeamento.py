@@ -61,3 +61,5 @@ idade = map(aumenta_idade, pessoas)
 
 for item in idade:
     print(item)
+print()
+
