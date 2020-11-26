@@ -20,7 +20,7 @@ pessoas = [
     {'nome': 'Tiago', 'idade': 35},
     {'nome': 'Felipe', 'idade': 42},
     {'nome': 'Mateus', 'idade': 50},
-    {'nome': 'Bartolomeu', 'idade': 43},
+    {'nome': 'Bartolomeu', 'idade': 13},
     {'nome': 'André', 'idade': 55},
     {'nome': 'Tómas', 'idade': 23},
     {'nome': 'JUdas', 'idade': 39},
