@@ -15,7 +15,7 @@ def divisao(n1, n2):
         return
     return n1 / n2
 
-
+# Função atribuida a uma variável, não retornará none
 variavel = funcao('Valor que eu quero.')
 
 if variavel:
@@ -46,3 +46,4 @@ if var == f:
     print('var é igual a f.')
 else:
     print('Blaaaaaaa')
+

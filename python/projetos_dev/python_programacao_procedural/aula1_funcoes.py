@@ -26,4 +26,5 @@ funcaoDoisParametros('Olá,', 'Jonatan')
 funcaoDoisParametros('Bom dia,', 'Paschoal')
 funcaoValoresPadrao()
 funcaoValoresPadrao('Boa tarde,', 'Ciclano')
+# funções nomeadas, mesmo invertida seguem a ordem quando impressas nas tela
 funcaoValoresPadrao(nome = 'Zé', msg = 'Olá,')
