@@ -33,7 +33,7 @@ def velocidade(funcao):
 
 @velocidade
 def demora():
-    for i in range(10000):
+    for i in range(10):
         print(i, end='-')
         #sleep(1)
 
