@@ -7,7 +7,7 @@ def func(a1,a2,a3,a4,a5,nome='None',a6=None): # depois de um argumento nomeado, 
 
 var = func(1,2,3,4,5,nome = 'Jon', a6 = '6')
 
-def desempacotamento(*args, **kwargs): # * usado para vários argumentos (desempacotamento) / kwargs = usado com chave
+def desempacotamento(*args, **kwargs): # * usado para vários argumentos (desempacotamento), mostra os argumentos da função que não foram listado. / kwargs = usado com chave
     print(args)
     #print(kwargs)
     print(kwargs['nome'], kwargs['sobrenome'])
