@@ -12,7 +12,7 @@ def mostrarLista(funcao):
     for valores in funcao:
         print(f'\033[1,32m - {valores}')
 
-def adicionarTerefa():
+def adicionarTarefa():
     txt = input('\033[mDigite o item que deseja adicionar a lista: ').strip().title()
     lista.append(txt)
     return lista
@@ -22,7 +22,7 @@ def desfazer(lista):
     lista.pop()
     return lista
 
-# Variaveis
+# Listas
 lista = []
 temporario = []
 
@@ -49,7 +49,7 @@ while True:
         else:
             break
     if acao == 1:
-        adicionarTerefa()
+        adicionarTarefa()
     elif acao == 2:
         print(f'\033[m{" "}', end='')
         print(f'\033[1m-='*20)
@@ -73,7 +73,7 @@ while True:
                   '\nPor favor digite novamente!\033[m')
             pass
     elif acao == 5:
-        nome  = input('Digite o nome do arquivo do arquivo para gerar sua lista (max 5 caracteres): ')[:6]
+        nome = input('Digite o nome do arquivo do arquivo para gerar sua lista (max 5 caracteres): ')[:6]
         nome += '.txt'
         titulo = input('Digite um título para sua lista: ').upper
         break
