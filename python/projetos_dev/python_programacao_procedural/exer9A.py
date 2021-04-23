@@ -77,6 +77,7 @@ while True:
         nome += '.txt'
         titulo = input('Digite um título para sua lista: ').upper
         break
+    
 with open(nome, 'a+') as file:
     file.write(f'{titulo}\n')
     for itens in lista:
