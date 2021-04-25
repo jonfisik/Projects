@@ -20,9 +20,14 @@ while tema!= 5:
         frase = 0
         while frase != 5:
             print('''
-            [1] - lalalala
-            [2] - abababababababbabab
-            [3] - papapapapapapapapap
+            [1] - Bendiga ao Senhor a minha alma! Bendiga ao Senhor todo o meu ser! Bendiga ao Senhor a minha alma! Não esqueça de nenhuma de suas bênçãos!
+            É ele que perdoa todos os seus pecados e cura todas as suas doenças, que resgata a sua vida da sepultura e o coroa de bondade e compaixão,
+            que enche de bens a sua existência, de modo que a sua juventude se renova como a águia. O Senhor faz justiça e defende a causa dos oprimidos. Salmos 103:1-6
+            
+            [2] - Porque o Senhor é bom, e eterna a sua misericórdia; e a sua verdade dura de geração em geração. Salmos 100:5
+            
+            [3] - Porque nele vivemos, e nos movemos, e existimos. Atos 17:28
+            
             [4] - mamamamamammamamama
             [5] - tatatattatattatatta.''')
             
