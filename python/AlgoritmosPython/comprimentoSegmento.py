@@ -53,6 +53,7 @@ while cont < n:
         if seg > segMax:
             segMax = seg
         seg = 1
+        
     
     cont += 1
     ant = prox
