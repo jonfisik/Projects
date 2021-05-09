@@ -1,7 +1,7 @@
 __author__  = 'JPaschoal'
 __version__ = '1.0.1'
 __email__   = 'jonfisik@hotmail.com'
-__date__    = '06/05/2021'
+__date__    = '08/05/2021'
 '''
 Comprimento segmento
 Dados n e uma sequência de n números inteiros, determinar o comprimento de
