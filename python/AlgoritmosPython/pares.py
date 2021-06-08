@@ -3,10 +3,14 @@ __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __date__    = '08/06/2021'
 """
-?
-Dados dois naturais m e n determinar, entre todos os pares de números naturais
-(x,y) tais que x < m e y < n, um par para o qual o valor da expressão
-x*y - x**2 + y seja máximo e calcular também esse máximo.
+"""
+Dados três números naturais,
+verificar se eles formam os lados de um triângulo retângulo.
+
+lado1**2 + lado2**2 == lado3**2
+lado3**2 + lado1**2 == lado2**2
+lado2**2 + lado3**2 == lado1**2
+"""
 """
 #-----------------------------------------------------------
 def traco():
