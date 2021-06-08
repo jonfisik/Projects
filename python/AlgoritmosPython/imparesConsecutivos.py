@@ -3,6 +3,7 @@ __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __date__    = '01/06/2021'
 """
+??
 Sabe-se que um número da forma n**3 é igual a soma de n ímpares consecutivos.
 
 Exemplo: 1**3= 1, 2**3= 3+5, 3**3= 7+9+11,  4**3= 13+15+17+19,...
@@ -14,13 +15,25 @@ def traco():
     return print('-----'*10)
 
 print('')
-print("Naturais - ")
+print("Ímpares consecutivos - ")
 traco()
 
 #input
-
+m = int(input('Digite o valor de m: '))
 #-----------------------------------------------------------
+for n in range(1, m+1):
+    soma, inicio = 0, 1
+    while soma != n*n*n:
+        soma = 0
+        for i in range(n):
+            soma = soma + inicio + 2*i
+            inicio += 2
 
+    inicio = inicio - 2
+    print(f'{n}x{n}x{n} = ')
+    for i in range(n):
+        print('+', inicio+2*i)
+    print('\n')
 
 
 print('')
