@@ -9,6 +9,8 @@ import PySimpleGUI as sg
 # Classe
 class TelaPython:
     def __init__(self):
+        #Escolher modelo de Layout
+        #sg.change_look_and_feel('DarkBronw4')
         # Layout
         layout =[
             # sg.Text - cria a label, sg.Imput - recebe os dados
