@@ -26,6 +26,13 @@ def multiplicar():
     print('O produto de ' + str(n1) + ' e ' + str(n2) + ' = ' + str(res))
 
 
+def calculos():
+    somar()
+    subtrair()
+    multiplicar()
+
+# main()
+
 print('')
 print('Definição Função')
 traco()
@@ -33,3 +40,8 @@ somar()
 subtrair()
 multiplicar()
 traco()
+print('')
+calculos()
+traco()
+
+#END
