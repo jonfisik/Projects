@@ -2,7 +2,7 @@ __author__  = 'Jonatan Paschoal'
 __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __status__  = 'Professor - Física'
-__date__    = '24/06/2021'
+__date__    = '28/06/2021'
 '''
 Definição classe
 Especificação (conj. de regras) de um objeto. Objeto é a instância (personificação) de uma classe.
