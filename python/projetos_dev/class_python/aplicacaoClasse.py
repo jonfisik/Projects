@@ -113,10 +113,13 @@ while ret < '7':
         informacoes()
     elif ret == '3':
         excluirCarro()
-    elif ret == 4:
+    elif ret == '4':
         ligarCarro()
-    elif ret == 5:
+    elif ret == '5':
         desligarCarro()
-    elif ret == 6:
+    elif ret == '6':
         listarCarro()
-    
+    ret = Menu()
+
+os.system('cls') or None
+print('Programa finalizado.')
