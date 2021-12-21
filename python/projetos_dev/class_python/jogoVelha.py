@@ -20,9 +20,9 @@ quemJoga = 2 # 1 = CPU - 2 = Jogador
 maxJogadas = 9
 vit = 'n' #Vitória
 velha = [
-    [' ',' ',' '],
-    [' ',' ',' '],
-    [' ',' ',' '],
+    [' ',' ',' '], # L0C0 L0C1 L0C2
+    [' ',' ',' '], # L1C0 L1C1 L1C2
+    [' ',' ',' ']  # L2C0 L2C1 L2C2
 ]
 
 def tela():
@@ -69,6 +69,69 @@ def cpuJoga():
         velha[l][c] = 'O'
         jogadas += 1
         quemJoga = 2
+
+def verificarVitoria():
+    global velha
+    vitoria = 'n'
+    simbolos = ['X','O']
+    for s in simbolos:
+        vitoria = 'n'
+        #Verificar Linhas
+        indice_linha = indice_coluna = 0
+        while indice_linha < 3:
+            soma = 0
+            indice_coluna = 0
+            while indice_coluna < 3:
+                if (velha[indice_linha][indice_coluna] == s):
+                    soma += 1
+                indice_coluna += 1
+            if(soma == 3):
+                vitoria = s
+                break
+            indice_linha += 1
+        if(vitoria != 'n'):
+            break
+
+        #Verificar Colunas
+        indice_linha = indice_coluna = 0
+        while indice_coluna < 3:
+            soma = 0
+            indice_linha = 0
+            while indice_linha < 3:
+                if (velha[indice_linha][indice_coluna] == s):
+                    soma += 1
+                indice_linha += 1
+            if(soma == 3):
+                vitoria = s
+                break
+            indice_coluna += 1
+        if(vitoria != 'n'):
+            break
+
+        #Verificar Diagonal 1
+        soma = 0
+        idiag = 0 # idiag: indice diagonal
+        while idiag < 3:
+            if(velha[idiag][idiag] == s):
+                soma += 1
+            idiag += 1
+        if(soma == 3):
+            vitoria = s
+            break
+
+        #Verificar Diagonal 2
+        soma = 0
+        idiagl = 0 # idiagl: indice diagonal linha
+        idiagc = 2 # idiagc: indice diagonal coluna
+        while idiagc < 3:
+            if(velha[idiagl][idiagc] == s):
+                soma += 1
+            idiagl += 1
+            idiagc -= 1
+        if(soma == 3):
+            vitoria = s
+            break
+    return vitoria
 
 while True:
     tela()
