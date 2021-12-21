@@ -36,5 +36,10 @@ def tela():
     print('   -----------')
     print('2:  ' + velha[2][0] + ' | ' + velha[2][1] + ' | ' + velha[2][2])
     print('Jogadas: ' + Fore.GREEN + str(jogadas) + Fore.RESET)
-    
-tela()
+
+while True:
+    tela()
+    #jogadaJogador
+    #jogadaCPU
+    #verificarVitoria
+    break
