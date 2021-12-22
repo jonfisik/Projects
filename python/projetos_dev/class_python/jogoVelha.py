@@ -123,7 +123,7 @@ def verificarVitoria():
         soma = 0
         idiagl = 0 # idiagl: indice diagonal linha
         idiagc = 2 # idiagc: indice diagonal coluna
-        while idiagc < 3:
+        while idiagc  >= 0:
             if(velha[idiagl][idiagc] == s):
                 soma += 1
             idiagl += 1
@@ -133,7 +133,35 @@ def verificarVitoria():
             break
     return vitoria
 
-while True:
-    tela()
-    jogadorJoga()
-    cpuJoga()
+def redefinir():
+    global velha
+    global jogadas
+    global quemJoga
+    global maxJogadas
+    global vit
+    jogadas = 0
+    quemJoga = 2 # 1 = CPU - 2 = Jogador
+    maxJogadas = 9
+    vit = 'n' #Vitória
+    velha = [
+        [' ',' ',' '], # L0C0 L0C1 L0C2
+        [' ',' ',' '], # L1C0 L1C1 L1C2
+        [' ',' ',' ']  # L2C0 L2C1 L2C2
+    ]
+while(jogarNovamente == 's'):
+    while True:
+        tela()
+        jogadorJoga()
+        cpuJoga()
+        tela()
+        vit = verificarVitoria()
+        if(vit != 'n') or (jogadas >= maxJogadas):
+            break
+
+    print(Fore.RED + 'FIM DE JOGO' + Fore.YELLOW)
+    if(vit == 'X' or vit == 'O'):
+        print('Resultado: Jogador ' + vit + ' venceu!!!')
+    else:
+        print('Resultado: Empate!!!')
+    jogarNovamente = input(Fore.BLUE + 'Jogar novamente? [s/n]: ' + Fore.RESET)
+    redefinir()
