@@ -1,7 +1,7 @@
 __author__  = 'Jonatan Paschoal'
 __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
-__status__  = 'Professor - Física'
+__status__  = 'Professor - Física & Matemática'
 __date__    = '23/12/2021'
 '''
 Manipulando json como um dictionary.
