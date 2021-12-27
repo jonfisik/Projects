@@ -3,6 +3,7 @@ __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __date__    = '08/06/2021'
 """
+#ignorância zero
 Dados três números naturais,
 verificar se eles formam os lados de um triângulo retângulo.
 
