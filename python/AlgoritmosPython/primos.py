@@ -3,6 +3,7 @@ __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __date__    = '08/06/2021'
 """
+#ignorância zero
 Faça um programa que mostre todos os primos entre 1 e N sendo N um número
 inteiro fornecido pelo usuário. O programa deverá mostrar também o número de
 divisões que ele executou para encontrar os números primos.
@@ -21,6 +22,9 @@ N = int(input('Digite o valor de N: '))
 div = 0
 print('')
 
+#
+## Com o bloco while
+# 
 for i in range(1, N+1):
     primo = True
     
@@ -35,6 +39,9 @@ for i in range(1, N+1):
         print(i)
 print(f'Foram feitas {div} divisões.')
 traco()
+#
+## Com o bloco for
+# 
 div = 0
 for i in range(1, N+1):
     primo = True
