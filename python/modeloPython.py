@@ -1,3 +1,4 @@
+
 __author__  = 'JPaschoal'
 __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
@@ -16,20 +17,12 @@ print("Máximo - ")
 traco()
 
 #input
-n = int(input('Digite n: '))
-m = int(input('Digite m: '))
-#-----------------------------------------------------------
-Xmax = Ymax = Vmax = 0
-x = y = 0
 
-for x in range(m):
-    for y in range(n):
-        if x*y - x*x + y > Vmax:
-            Vmax = x*y - x*x + y
-            Xmax = x
-            Ymax = y
+#-----------------------------------------------------------
+
+
+
 print('')
-print(f'O maior par é {Xmax},{Ymax} e seu valor máximo é {Vmax}.')
 traco()
 print('')
 # END
