@@ -2,7 +2,7 @@ __author__  = 'Jonatan Paschoal'
 __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __status__  = 'Professor - Física & Matemática'
-__date__    = '27/12/2021'
+__date__    = '04/01/2022'
 '''
 #ignorância zero
 Números reais
