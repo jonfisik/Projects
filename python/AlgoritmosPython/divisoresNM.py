@@ -12,7 +12,7 @@ i = 9, j = 21 a saída deverá ser: 1, 3
 """
 
 def traco():
-    return print('-----'*5)
+    return print('-----'*7)
 
 print('')
 print("Divisores de i e j - ")
@@ -24,15 +24,14 @@ traco()
 i = int(input('Digite o número i: '))
 j = int(input('Digite o número j: '))
 
-nat, cont = 0, 0
 #
 ## teste lógico
 #
-while cont < i or cont < j:
-    if i % cont == 0 and j % cont == 0:
-        print('')
-        print(f'{i%cont} {j%cont}')
-        cont = cont + 1
-    nat = nat + 1
-print('')
+print(f'Os divisores comuns de {i} e {j} são: ')
+print(1)
+divisor  = 2
+while divisor <= i and divisor <= j:
+    if i % divisor == 0 and j % divisor == 0:
+        print(f'{divisor}')
+    divisor = divisor + 1
 traco()
