@@ -2,13 +2,48 @@ __author__  = 'Jonatan Paschoal'
 __version__ = '1.0.0'
 __email__   = 'jonfisik@hotmail.com'
 __status__  = 'Professor - Física & Matemática'
-__date__    = '27/12/2021'
+__date__    = '04/01/2022'
 '''
 #ignorância zero
 Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
 Para homens: (72.7*h) - 58
 Para mulheres: (62.1*h) - 44.7 (h = altura)
 Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do peso.
-"""
-
 '''
+#
+## Função e título
+#
+def pesoIdeal():
+    h = float(input('Digite sua altura: ')) # h: altura
+    sexo = input('Sexo [M/F]: ')
+    if sexo in 'Mm':
+        peso = (72.7*h) - 58
+        print(f'{nome}, seu peso ideal é {peso}.')
+    elif sexo in 'Ff':
+        peso = (62.1*h) - 44.7
+        print(f'{nome}, seu peso ideal é {peso}.')
+    return
+    
+
+def traco():
+    return print('----'*10)
+
+traco()
+print('Peso ideal - ')
+traco()
+
+#
+## input e declaração
+# 
+nome = input('Digite seu nome: ')
+
+traco()
+
+while True:
+    pesoIdeal()
+    opcao = input('Deseja continuar? [S/N]: ')
+    if opcao in 'Ss':
+        pesoIdeal()
+    else:
+        break
+traco()
