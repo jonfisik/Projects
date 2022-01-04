@@ -9,11 +9,13 @@ Tendo como dados de entrada a altura e o sexo de uma pessoa, construa um algorit
 Para homens: (72.7*h) - 58
 Para mulheres: (62.1*h) - 44.7 (h = altura)
 Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do peso.
+INCOMPLETO
 '''
 #
 ## Função e título
 #
 def pesoIdeal():
+    nome = input('Digite seu nome: ')
     h = float(input('Digite sua altura: ')) # h: altura
     sexo = input('Sexo [M/F]: ')
     if sexo in 'Mm':
@@ -24,26 +26,32 @@ def pesoIdeal():
         print(f'{nome}, seu peso ideal é {peso}.')
     return
     
-
 def traco():
     return print('----'*10)
 
 traco()
-print('Peso ideal - ')
+print('Peso ideal - V1.0.0')
 traco()
 
 #
-## input e declaração
+## Rotina principal
 # 
-nome = input('Digite seu nome: ')
-
-traco()
-
 while True:
     pesoIdeal()
     opcao = input('Deseja continuar? [S/N]: ')
+    traco()
     if opcao in 'Ss':
         pesoIdeal()
     else:
         break
 traco()
+
+#while True:
+#    pesoIdeal()
+#   opcao = input('Deseja continuar? [S/N]: ')
+#    traco()
+#    while True:
+#        if opcao in 'Ss':
+#            pesoIdeal()
+#        else:
+#            break
