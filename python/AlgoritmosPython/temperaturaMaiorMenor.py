@@ -48,7 +48,7 @@ print('Temperatura Maior, menor - ')
 traco()
 
 #
-# Rotina principal
+## Rotina principal
 #
 resp = 'S'
 while resp in 'Ss':
