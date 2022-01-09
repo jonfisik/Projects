@@ -27,6 +27,26 @@ raiz = (-b +ou-(delta**(1/2)))/(2*a)
 #
 ## Funções
 #
+def equacao2grau():
+    a = float(input('Digite o coeficiente [a]: '))
+    b = float(input('Digite o coeficiente [b]: '))
+    c = float(input('Digite o coeficiente [c]: '))
+    print(f'Equação a ser resolvida {a}x2+{b}x+{c}=0')
+
+    delta = b**2 - 4*a*c
+    if a == 0:
+        print('A equação informada não é do segundo grau.')
+    else:
+        if delta < 0:
+            print('Delta negativo, não há raízes nos reais.')
+        elif delta == 0:
+            raiz1 = (-b+(delta**(1/2)))/(2*a)
+            print(f'Delta igual a zero, há apenas uma raíz x1 = {raiz1:.2f}.')
+        elif delta > 0:
+            raiz1 = (-b+(delta**(1/2)))/(2*a)
+            raiz2 = (-b-(delta**(1/2)))/(2*a)
+            print(f'Delta positivo, há duas raízes x1 = {raiz1:.2f} e x2 = {raiz2:.2f}.')
+
 def traco():
     return print('----'*20)
 
@@ -36,23 +56,17 @@ def traco():
 traco()
 print('Equação do 2º grau - ')
 traco()
+#
+# Rotina principal
+#
 
-a = float(input('Digite o coeficiente [a]: '))
-b = float(input('Digite o coeficiente [b]: '))
-c = float(input('Digite o coeficiente [c]: '))
-print(f'Equação a ser resolvida {a}x2+{b}x+{c}=0')
+resp = 'S'
+while resp in 'Ss':
+    equacao2grau()
+    traco()
+    resp = str(input('Quer continuar? [S/N]: ')).upper().strip()[0]
+    traco()
 
-delta = b**2 - 4*a*c
-if a == 0:
-    print('A equação informada não é do segundo grau.')
-else:
-    if delta < 0:
-        print('Delta negativo, não há raízes nos reais.')
-    elif delta == 0:
-        raiz1 = (-b+(delta**(1/2)))/(2*a)
-        print(f'Delta igual a zero, há apenas uma raíz x1 = {raiz1}.')
-    elif delta > 0:
-        raiz1 = (-b+(delta**(1/2)))/(2*a)
-        raiz2 = (-b-(delta**(1/2)))/(2*a)
-        print(f'Delta positivo, há duas raízes x1 = {raiz1} e x2 = {raiz2}.')
+print('FIM')
 traco()
+#END
