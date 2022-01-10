@@ -8,12 +8,23 @@ __date__    = '09/01/2022'
 Faça um programa que calcule o número médio de alunos por turma.
 Para isto, peça a quantidade de turmas e a quantidade de alunos para cada turma.
 As turmas não podem ter mais de 40 alunos.
+
+INCOMPLETO!!!
 '''
 #
 ## Funções
 #
+def mediaTurmas():
+    turma = int(input('Digite a quantidade de turmas: '))
+    soma = 0
+    for i in range(1, turma+1):
+        qtd = int(input(f'Digite o número de alunos da {i}ª turma: '))
 
-
+        while qtd > 40 or qtd < 0:
+            print('Numero de alunos inválido.')
+            qdt = int(input(f'Digite o número de alunos da turma {i}ª turma: '))
+        soma += qtd
+    print (f'A média dos alunos é {soma/turma:.10g}')
 
 def traco():
     return print('----'*10)
@@ -28,8 +39,12 @@ traco()
 #
 ## Rotina principal
 #
-
-
+opcao = 'S'
+while opcao in 'Ss':
+    mediaTurmas()
+    traco()
+    opcao =str(input('Deseja continuar? [S/N]: ')).strip().upper()[0]
+    traco()
 
 print('FIM')
 traco()
