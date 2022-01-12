@@ -29,7 +29,7 @@ def traco():
     print('-----'*15)
 
 def calculoSalario():
-    nome = str(input('Funcionário: ')).strip()
+    nome = str(input('Funcionário(a): ')).strip()
     salario = float(input('Salário R$ '))
     traco()
     ajuste = 0
@@ -51,7 +51,7 @@ def calculoSalario():
         n_salario = salario + ajuste
         percentual = str('5%')
 
-    print(f'Funcionário: {nome}.')
+    print(f'Funcionário(a): {nome}.')
     print(f'Salário anterior R$ {salario}.')
     print(f'Percentual aplicado {percentual}.')
     print(f'Aumento de R$ {ajuste}.')
@@ -68,11 +68,19 @@ traco()
 ## Rotina principal
 #
 opcao = 'S'
-while opcao in 'Ss':
-    calculoSalario()
-    traco()
-    opcao = str(input('Deseja continuar cadastro? [S/N] '))
-    traco()
-
+#while opcao in 'Ss':
+while True:
+    if opcao == 'S':
+        calculoSalario()
+        traco()
+        opcao = str(input('Deseja continuar cadastro? [S/N]: ')).strip().upper()[0]
+    elif opcao != 'S':
+        print('Escolha a opção correta.')
+        opcao = str(input('Deseja continuar cadastro? [S/N]: ')).strip().upper()[0]
+        traco()
+    if opcao == 'N':
+        traco()
+        break
+    
 print('')
 #END
