@@ -33,14 +33,29 @@ def calculoSalario():
     salario = float(input('Salário R$ '))
     traco()
     ajuste = 0
+    percentual = str('%')
     if salario <= 280:
-        print(f'Funcionário: {nome}.')
         ajuste = salario*0.25
         n_salario = salario + ajuste
-        print(f'Salário anterior R$ {salario}.')
-        print('Percentual aplicado 25%.')
-        print(f'Aumento de R$ {salario*0.25}.')
-        print(f'Novo salário R$ {n_salario}.')
+        percentual = str('25%')
+    elif salario > 280 and salario <= 700:
+        ajuste = salario*0.15
+        n_salario = salario + ajuste
+        percentual = str('15%')
+    elif salario > 700 and salario <= 1500:
+        ajuste = salario*0.10
+        n_salario = salario + ajuste
+        percentual = str('10%')
+    elif salario > 1500:
+        ajuste = salario*0.05
+        n_salario = salario + ajuste
+        percentual = str('5%')
+
+    print(f'Funcionário: {nome}.')
+    print(f'Salário anterior R$ {salario}.')
+    print(f'Percentual aplicado {percentual}.')
+    print(f'Aumento de R$ {ajuste}.')
+    print(f'Novo salário R$ {n_salario}.')
 
 #
 ## Títulos
